@@ -996,3 +996,25 @@ font-weight: 700;
 .custom-select option:hover {
     background-color: #2fbba9 !important;
   }
+
+
+  .menu-item i{
+    font-size: 16px;
+  }
+
+  .mngcontent p{
+    font-size: 14px;
+  }
+  .mngcontent{
+    columns: 2;
+  }
+
+.vinnie img{
+width: 100% !important;
+  }
+
+  /* timeline CSS */
+
+ 
+
+
