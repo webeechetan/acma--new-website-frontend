@@ -98,7 +98,6 @@
     line-height: 60px;
     color: var(--dark-blue);
     font-weight: bold;
-    font-family: Actionsans;
 }
 
 
@@ -111,7 +110,6 @@
 
 .para .TogetherText {
     color: var(--dark-green);
-    font-family: Actionsans;
 }
 
 
@@ -1005,13 +1003,19 @@ font-weight: 700;
   .mngcontent p{
     font-size: 14px;
   }
-  .mngcontent{
+  /* .mngcontent{
     columns: 2;
+  } */
+  .mngcontent {
+    max-height: 400px; 
+    overflow-y: auto;  
+    padding: 10px;    
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
   }
 
-.vinnie img{
-width: 100% !important;
-  }
+
 
   /* timeline CSS */
 

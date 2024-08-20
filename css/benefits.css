@@ -1,0 +1,50 @@
+.benefitBox{
+    background-color: var(--dark-green);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+}
+.benefitBox p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.cta-btn{
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 5px 15px;
+    margin-left: 15px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    border-radius: 10px;
+
+
+}
+.eligibility{
+    font-size: 25px;
+}
+.becomeMember a{
+text-decoration: none;
+color: #000;
+display: flex;
+gap: 5px;
+align-items: center;
+justify-content: center;
+}
+.becomeMember {
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+.fa-arrow-right{
+    transform: rotate(0deg);
+}
+.mail p, .mail a{
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+}

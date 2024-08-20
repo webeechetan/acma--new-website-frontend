@@ -39,35 +39,38 @@
 .content{
   padding-bottom:20px;
 }
+
+
+
+
 .timeline ul li:nth-child(odd):before
 {
   content:'';
   position:absolute;
-  width:10px;
-  height:10px;
-  top:24px;
-  right:-6px;
+  width: 18px;
+    height: 18px;
+    top: 40px;
+  right:-24px;
   background:var(--primary-yellow);
   border-radius:50%;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.2);
 }
 .timeline ul li:nth-child(even):before
 {
   content:'';
   position:absolute;
-  width:10px;
-  height:10px;
-  top:24px;
-  left:-4px;
+  width: 18px;
+    height: 18px;
+  top:40px;
+  left:-24px;
   background:var(--primary-yellow);
   border-radius:50%;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.2);
 }
 .timeline ul li h3{
   padding:0;
   margin:0;
   font-weight:600;
 }
+
 .timeline ul li p{
   margin:10px 0 0;
   padding:0;
@@ -84,10 +87,8 @@
   right:-165px;
   margin:0;
   padding:8px 16px;
-  background:rgba(233,33,99,1);
   color:#fff;
   border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
 }
 .timeline ul li:nth-child(even) .time
 {
@@ -96,10 +97,8 @@
   left:-165px;
   margin:0;
   padding:8px 16px;
-  background:rgba(233,33,99,1);
   color:#fff;
   border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
 }
 @media(max-width:1000px)
 {
@@ -149,5 +148,55 @@
   border-radius:18px;
   display: inline-block;
   font-size: 16px;
+  margin-bottom: 0;
   
+}
+
+
+@media only screen and (min-width:768px) {
+  
+  ul li:nth-child(odd) .content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    border: none;
+  }
+  ul li:nth-child(even) .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+    border: none;
+  
+  }
+  .timeline ul li{
+    background-color: #eee;
+    border-radius: 50px;
+    padding-block:20px;
+
+  }
+  .timeline li{
+    margin: 0px -15px;
+  }
+  .timeline ul li:nth-child(even):before{
+    right:-24px !important;
+
+  }
+  .timeline ul li:nth-child(odd):before{
+    right:-24px !important;
+
+  }
+  
+}
+.timeline .content h3{
+ 
+    font-size: 25px;
+    line-height: 48px;
+    color: var(--dark-blue);
+    font-weight: 600;
+    display: inline-block;
+
 }
