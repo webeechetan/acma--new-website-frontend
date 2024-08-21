@@ -1,0 +1,116 @@
+/* International Events */
+:root {
+    --bg-light-orange: #FEF4F5;
+    --bg-light-green: #F2FBFA;
+    --border-light-orange: #f4d4d4;
+    --border-light-green: #D4F4EC;
+    --btn-bg-odd: #FCE3CD;
+    --btn-text-color: #796A5D;
+    --btn-bg-even: #F1E9D2;
+}
+
+/* Event Typography */
+.fw-500 {
+    font-weight: 500;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+/* Event style */
+.no-sidebar #content {
+    margin-left: 0;
+}
+
+.card-group * {
+    font-family: 'Poppins';
+}
+
+.card-btn {
+    background: var(--btn-bg-odd);
+    width: 185px;
+    text-align: center;
+    padding: 6px;
+    color: var(--btn-text-color);
+}
+
+.card-style-even .card-btn {
+    background: var(--btn-bg-even);
+}
+
+#card-group .card-style-odd {
+    background: var(--bg-light-orange);
+    border: 2px solid var(--border-light-orange);
+}
+
+#card-group .card-style-even {
+    background: var(--bg-light-green);
+    border: 2px solid var(--border-light-green);
+}
+
+.card-date {
+    color: var(--primary-green);
+}
+
+/* Center Goverment Policy */
+
+.policy-card-odd {
+    background-color: var(--bg-light-orange);
+    border: none;
+    text-align: center;
+    padding: 50px;
+    gap: 30px;
+
+}
+.policy-card-even {
+    background-color: var(--bg-light-green);
+    border: none;
+    text-align: center;
+    padding: 50px;
+    gap: 30px;
+
+}
+
+.card-custom h3 {
+    color: #34a853;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.policy-card-odd .download-btn {
+    color: var(--primary-yellow);
+    background: transparent;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid var(--primary-yellow);
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+.policy-card-even .download-btn {
+    color: var(--link-color);
+    background: transparent;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid var(--link-color);
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.icon-wrapper {
+    position: relative;
+}
+
+.corner-banner {
+    position: absolute;
+    top: -42px;
+    right: -33px;
+    background-color: #34a853;
+    color: white;
+    font-size: 26px;
+    padding: 5px 25px;
+    border-radius: 0px 0px 0px 50px;
+    transform: translate(15%, -15%);
+}
