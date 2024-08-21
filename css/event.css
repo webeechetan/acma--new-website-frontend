@@ -1,0 +1,43 @@
+/* International */
+:root {
+--bg-light-orange:#FEF4F5;
+--bg-light-green:#F2FBFA;
+--border-light-orange:#f4d4d4;
+--border-light-green:#D4F4EC;
+--card-btn-bg-odd:#FCE3CD;
+--card-text-color:#796A5D;
+--card-btn-bg-even:#F1E9D2;
+}
+/* Event Typography */
+.fw-500{
+    font-weight: 500;
+}
+.fs-18{
+    font-size: 18px;
+}
+
+/* Event style */
+.card-group *{
+    font-family: 'Poppins';
+}
+.card-btn {
+    background: var(--card-btn-bg-odd);
+    width: 185px;
+    text-align: center;
+    padding: 6px;
+    color: var(--card-text-color);
+}
+.card-style-even .card-btn {
+    background: var(--card-btn-bg-even);
+}
+#card-group .card-style-odd {
+    background: var(--bg-light-orange);
+    border: 2px solid var(--border-light-orange);
+}
+#card-group .card-style-even {
+    background: var(--bg-light-green);
+    border: 2px solid var(--border-light-green);
+}
+.card-date {
+    color: var(--primary-green);
+}
