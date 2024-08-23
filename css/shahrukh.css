@@ -53,22 +53,29 @@
     color: var(--primary-green);
 }
 
-/* Center Goverment Policy */
+/* Center/State Goverment Policy */
 
 .policy-card-odd {
     background-color: var(--bg-light-orange);
     border: none;
     text-align: center;
-    padding: 50px;
     gap: 30px;
+    padding: 40px 20px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
 
 }
+
 .policy-card-even {
     background-color: var(--bg-light-green);
     border: none;
     text-align: center;
-    padding: 50px;
     gap: 30px;
+    padding: 40px 20px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
 
 }
 
@@ -88,6 +95,7 @@
     border-radius: 50px;
     margin: 0 auto;
 }
+
 .policy-card-even .download-btn {
     color: var(--link-color);
     background: transparent;
@@ -103,14 +111,247 @@
     position: relative;
 }
 
+.policy-card-odd::after,
+.policy-card-even::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 240px;
+    height: 120px;
+    background-color: #34a853;
+    border-radius: 0 0 0 100px;
+    transform: translate(50%, -50%);
+    z-index: 0;
+}
+
 .corner-banner {
     position: absolute;
-    top: -42px;
-    right: -33px;
-    background-color: #34a853;
+    top: 0;
+    right: 0;
     color: white;
-    font-size: 26px;
-    padding: 5px 25px;
-    border-radius: 0px 0px 0px 50px;
-    transform: translate(15%, -15%);
+    font-size: 24px;
+    padding: 5px 15px;
+    z-index: 1;
+}
+.state-info {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+    padding-left: 30px; /* space for the shape */
+}
+.policy-card-even .state-info{
+    background-color: #e0f8f5;
+}
+.policy-card-odd .state-info {
+    background-color: #ffe7e9;
+}
+.state-info {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    max-width: 260px;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.state-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: translateX(-100%);
+    z-index: 1;
+    animation: shine 2.5s infinite;
+}
+
+.state-info::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 215, 0, 0.5);
+    border-radius: 50%;
+    z-index: 0;
+    animation: float 6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(20px) rotate(45deg);
+    }
+}
+
+
+/*Press Release*/
+
+/* .row {
+    row-gap: 20px;
+} */
+
+.press-card-title, .press-card-date, .press-download {
+    margin-top: auto;
+}
+
+.press-card-even, .press-card-odd {
+    height: 100%;
+}
+
+
+/* Press Card Odd */
+.press-card-odd {
+    position: relative;
+    background-color: var(--bg-light-orange);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.press-card-odd {
+    transform: translateY(-10px);
+}
+
+.press-card-odd::before,
+.press-card-odd::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.press-card-odd::before {
+    width: 150px;
+    height: 150px;
+    background-color: #34a853;
+    top: -60px;
+    left: -60px;
+}
+
+.press-card-odd::after {
+    width: 100px;
+    height: 100px;
+    background-color: #e6f5e6;
+    bottom: -40px;
+    right: -40px;
+}
+
+/* Press card Even */
+
+.press-card-even {
+    position: relative;
+    background-color: var(--bg-light-green);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.press-card-even {
+    transform: translateY(-10px);
+}
+
+.press-card-even::before,
+.press-card-even::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.press-card-even::before {
+    width: 150px;
+    height: 150px;
+    background-color: #34a853;
+    top: -60px;
+    left: -60px;
+}
+
+.press-card-even::after {
+    width: 100px;
+    height: 100px;
+    background-color: #e6f5e6;
+    bottom: -40px;
+    right: -40px;
+}
+
+.press-icon-wrap {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #34a853;
+    border-radius: 50%;
+    display: flex;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.press-card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.press-card-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.press-card-odd .press-download {
+    color: var(--primary-yellow);
+    background: transparent;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid var(--primary-yellow);
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: 0 auto 0 0;
+}
+.press-icon-wrap i {
+    font-size: 35px;
+}
+.press-card-even .press-download {
+    color: var(--link-color);
+    background: transparent;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid var(--link-color);
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin: 0 auto 0 0;
 }
