@@ -68,3 +68,25 @@ justify-content: center;
 .cpas{
     line-height: 44px;
 }
+.becomeMember img{
+    max-width: 200px;
+}
+.becomeMember h6{
+    font-size: 15px;
+}
+#members{
+    background-color: var(--light-green);
+    margin-bottom:40px;
+}
+#becomeMembers{
+    background-color: var(--light-green);
+    margin-bottom: 40px;
+ 
+}
+.cta-btn2{
+    background-color: var(--dark-green);
+    color: white !important;
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
