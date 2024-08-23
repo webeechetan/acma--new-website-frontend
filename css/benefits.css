@@ -48,3 +48,23 @@ justify-content: center;
     color: #000;
     text-align: center;
 }
+.big-section{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    
+  background-color: #1e1d1d;
+}
+.big-section p{
+    color: #fff;
+    margin-bottom: 0;
+}
+.fs-30{
+    font-size: 1.875rem;
+    line-height: 2.8rem;
+}
+.fs-18{
+    font-size: 24px;
+}
+.cpas{
+    line-height: 44px;
+}
