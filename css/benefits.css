@@ -158,14 +158,20 @@ justify-content: center;
     color: #fff;
     font-size: 25px;
     padding: 20px 0px;
+    text-wrap: nowrap;
 }
 .table tr{
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+    text-wrap: nowrap;
     
 }
 .contentBox2 p{
     font-size: 20px;
 }
 
+.andtext{
+    font-size: 25px;
+    font-weight: 600;
+}
