@@ -151,3 +151,21 @@ justify-content: center;
   .bg-autonews{
     background-color: var(--light-green);
   }
+
+ 
+.table th{
+    background-color: var(--dark-green);
+    color: #fff;
+    font-size: 25px;
+    padding: 20px 0px;
+}
+.table tr{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.contentBox2 p{
+    font-size: 20px;
+}
+
