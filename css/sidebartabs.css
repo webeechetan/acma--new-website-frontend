@@ -1,0 +1,42 @@
+.tabs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-link {
+    padding: 10px;
+    background-color: var(--light-green);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.tab-link.active {
+    background-color: var(--dark-green);
+    color: #fff !important;
+}
+
+.tab-link:hover {
+    background-color:var(--dark-green);
+}
+
+.contentBox {
+    flex: 3;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-content {
+    display: block;
+}

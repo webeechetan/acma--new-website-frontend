@@ -1017,8 +1017,14 @@ font-weight: 700;
 
 
 
-  /* timeline CSS */
-
+  .btn-close{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .gallery-img {
+    
+    object-fit: cover; 
+}
  
 
 
