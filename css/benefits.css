@@ -168,10 +168,32 @@ justify-content: center;
     
 }
 .contentBox2 p{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .andtext{
     font-size: 25px;
     font-weight: 600;
+}
+.title3 {
+    font-size: 26px;
+    line-height: 48px;
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.diclamerText {
+    position: relative;
+    padding-bottom: 2px; 
+}
+
+.diclamerText::after {
+    content: "";
+    height: 5px;
+    width: 15%; 
+    position: absolute;
+    background-color:var(--dark-green);
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
 }
