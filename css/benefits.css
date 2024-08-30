@@ -92,13 +92,6 @@ justify-content: center;
 }
 
 
-/* slider */
-/* @media (min-width:1024px) {
-    .autoNews img{
-        max-width: 300px !important;
-    }
-    
-} */
 .slider-three-slide-prev1, .slider-three-slide-next1{
     outline: none;
     cursor: pointer;
